@@ -69,11 +69,9 @@
             if (toMove) {
                 //toMove.css('left', '120%');
                 toMove.css('left', '80%');
-                toMove.css('opacity', '.5');
                 toMove.css('z-index', this.sheets.length + 1);
                 setTimeout(() => {
                     toMove.css('left', '0');
-                    toMove.css('opacity', '1'); 
                     this._arrangeSheets(source);
                 }, 300);
             } else {
